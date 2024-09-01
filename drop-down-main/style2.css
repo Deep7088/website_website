@@ -1,0 +1,85 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(wp2141407.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+.Menu-bar{
+    background-color:green;
+    text-align: center;
+}
+.Menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(47, 0, 255);
+}
+.Menu-bar ul li {
+    width: 150px;
+    padding: 15px;
+    margin: 5px;
+}
+.Menu-bar ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.active, .Menu-bar ul li:hover{
+   background:#2bab0d;
+   border-radius: 3px;
+}
+.Menu-bar .fa{
+    margin-right: 10px;
+
+}
+.sub-Menu-1{
+    display: none;
+
+}
+.Menu-bar ul li:hover .sub-Menu-1{
+    display: block;
+    margin-top: 15px;
+    margin-left: -15px;
+    position: absolute;
+    background: rgb(0,100,0);
+}
+.Menu-bar ul li:hover .sub-Menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.Menu-bar ul li:hover .sub-Menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+
+}
+.Menu-bar ul li:hover .sub-Menu-1 ul li :last-child{
+    border-bottom: none;
+}
+.Menu-bar ul li:hover .sub-Menu-1 ul li a:hover{
+    color:black;
+}
+.fa-angle-right{
+    float: right;
+    color: #fff;
+}
+.sub-Menu-2{
+    display: none;
+}
+.hover-me:hover .sub-Menu-2{
+    position: absolute;
+    display: block;
+    background: rgba(0,100,0);
+    margin-left: 140px;
+    margin-top: -40px;
+}
